@@ -29,16 +29,23 @@
       
         $('#btnA').click(function(e) {
             btnAClick(e);
+            active = true;
+            startTime = new Date(); 
         });
 
         $('#btnB').click(function(e) {
             btnBClick(e);
+            active = false;
         });
 
         $('#btnC').click(function(e) {
             btnCClick(e);
-        });
-        init();
+            alarm();
+            active = false;
+ period = 60* parseInt( $("#minute").val() ) + parseInt( $("#second").val() );
+ $("#time").html("経過時間： 0");
+ $("#remain").html("残り時間： " + period);
+ 
     });
     
     function rgbToColor(r,g,b){
