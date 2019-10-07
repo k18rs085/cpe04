@@ -29,22 +29,17 @@
       
         $('#btnA').click(function(e) {
             btnAClick(e);
-            active = true;
-            startTime = new Date(); 
+           
         });
 
         $('#btnB').click(function(e) {
             btnBClick(e);
-            active = false;
+            
         });
 
         $('#btnC').click(function(e) {
             btnCClick(e);
-            alarm();
-            active = false;
- period = 60* parseInt( $("#minute").val() ) + parseInt( $("#second").val() );
- $("#time").html("経過時間： 0");
- $("#remain").html("残り時間： " + period);
+            
  
     });
     
@@ -171,13 +166,13 @@
     // Alarmの処理
     function alarm(){
       var canvas = $("#mycanvas")[0];
- var ctx = canvas.getContext("2d");
- var img = new Image();
- img.src = "ksuisbg.gif";
- img.onload = function() { ctx.drawImage(img, 0, 0, 300, 300); };
- var audio = new Audio();
- audio.src = "pin.wav";
- audio.play();
+      var ctx = canvas.getContext("2d");
+      var img = new Image();
+      img.src = "ksuisbg.gif";
+      img.onload = function() { ctx.drawImage(img, 0, 0, 300, 300); };
+      var audio = new Audio();
+      audio.src = "pin.wav";
+      audio.play();
 
         
         
