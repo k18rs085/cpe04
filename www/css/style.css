@@ -71,5 +71,6 @@
     }
 
     button{
-      color: rebeccapurple
+      color: skyblue;
+      font-style: italic;
     }
