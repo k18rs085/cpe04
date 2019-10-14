@@ -71,6 +71,10 @@
     }
 
     button{
-      color: skyblue;
+      color: rebeccapurple;
       font-style: italic;
     }
+
+   h2 {
+border-radius: 20px;
+} 
