@@ -39,8 +39,12 @@
         $('#btnC').click(function(e) {
             btnCClick(e);
         });
+         $(function() {
+          $("body").css("backgroundColor","red");
+        });
         init();
     });
+        
     
     function rgbToColor(r,g,b){
         return "#" + hex02(r)+hex02(g)+hex02(b);
